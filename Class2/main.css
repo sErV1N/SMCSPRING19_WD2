@@ -12,14 +12,14 @@ nav.navbar {
     padding: 10px 0px;
 }
 
-nav.navbar ul {
+nav.navbar ui {
     list-style:none;
     padding: 0px;
     margin: 0px;
     text-align: center;
 }
 nav.navbar li{
-border-bottom: 2px solid
+border-bottom: 2px solid;
 }
 nav.navbar li:last-child {
 border-bottom: none;
@@ -35,6 +35,9 @@ nav.navbar a {
         background-color:dodgerblue;
         width:750px;
         margin: 0px auto;
+        }
+        nav.navbar li {
+            display: inline-block;
     }
 }
 @media(min-width: 992px){
