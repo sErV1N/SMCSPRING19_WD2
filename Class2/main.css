@@ -12,14 +12,14 @@ nav.navbar {
     padding: 10px 0px;
 }
 
-nav.navbar ui {
-    list-style:none;
+nav.navbar ul {
+    list-style: none;
     padding: 0px;
     margin: 0px;
     text-align: center;
 }
-nav.navbar li{
-border-bottom: 2px solid;
+nav.navbar li {
+border-bottom: 2px solid darkred;
 }
 nav.navbar li:last-child {
 border-bottom: none;
@@ -28,7 +28,7 @@ nav.navbar a {
     font-size:22px;
     line-height: 36px;
     text-decoration: none;
-    color: darkred;
+    color: rgb(0, 21, 139);
 }
 @media(min-width: 768px){
     .container {
