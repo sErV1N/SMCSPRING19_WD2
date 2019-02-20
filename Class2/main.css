@@ -2,9 +2,33 @@ body {
     margin: 0px;
 }
 .container {
-background-color:salmon;
+background-color:darkred;
 width: 100%;
 min-height: 300px;
+}
+nav.navbar {
+    background-color: darkseagreen;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+nav.navbar ul {
+    list-style:none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+nav.navbar li{
+border-bottom: 2px solid
+}
+nav.navbar li:last-child {
+border-bottom: none;
+} 
+nav.navbar a {
+    font-size:22px;
+    line-height: 36px;
+    text-decoration: none;
+    color: darkred;
 }
 @media(min-width: 768px){
     .container {
