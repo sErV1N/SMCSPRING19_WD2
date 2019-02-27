@@ -34,12 +34,15 @@ nav.navbar a {
     text-decoration: none;
     color: rgb(0, 21, 139);
 }
+
+/*--this section is for the point breaks*/
 @media(min-width: 768px){
     .container {
         background-color:dodgerblue;
         width:750px;
         margin: 0px auto;
         }
+        
         nav.navbar li {
             display: inline-block;
     }
@@ -50,3 +53,9 @@ nav.navbar a {
         background-color: plum;
     }
 }
+@media(min-width: 1200px){
+    .container {
+        background-color: lightcyan;
+        width: 800px;
+        margin: 0px auto;
+        }
