@@ -6,6 +6,10 @@ background-color:darkred;
 width: 100%;
 min-height: 300px;
 }
+
+img {max-width:100%; height:auto;margin:0 auto;display: block;} /*responsive code 
+for images so they adapt inside the container*/
+
 nav.navbar {
     background-color: darkseagreen;
     width: 100%;
