@@ -25,9 +25,48 @@
         min-height: 200px;
         margin-bottom: 20px;
     }
+
     .clearfix{
 clear:both;
     }
+
+    img {max-width:100%; height:auto;margin:0 auto;display: block;} /*responsive code 
+    for images so they adapt inside the container*/
+    
+    /*nav styles*/
+    nav.navbar {
+        background-color: darkseagreen;
+        width: 100%;
+        padding: 10px 0px;
+    }
+    
+    nav.navbar ul {
+        list-style: none;
+        padding: 10px;
+        margin: 0px;
+        text-align: center;
+    }
+    nav.navbar li {
+    border-bottom: 2px solid darkred;
+    display: inline-block;
+    }
+    nav.navbar li:last-child {
+    border-bottom: none;
+    } 
+    nav.navbar a {
+        font-size:22px;
+        line-height: 36px;
+        text-decoration: none;
+        color: rgb(0, 21, 139);
+    }
+    a:link {text-decoration:none;}
+    nav a:link  {background-color:aliceblue;color:none;display:block;padding: 5px;}
+    a:hover {background-color:white; color:black;}
+    a:active {background-color:blueviolet; color:yellow;} 
+    .active {
+        font-weight: 700;
+    }
+
 /**SMALL SCREENS**/
     @media (min-width: 450px){
 /**.floater-section{
