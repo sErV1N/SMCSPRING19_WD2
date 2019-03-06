@@ -35,7 +35,7 @@ clear:both;
     
     /*nav styles*/
     nav.navbar {
-        background-color: darkseagreen;
+        background-color: darkred;
         width: 100%;
         padding: 10px 0px;
     }
@@ -47,7 +47,7 @@ clear:both;
         text-align: center;
     }
     nav.navbar li {
-    border-bottom: 2px solid darkred;
+    border-bottom: 2px solid yellowgreen;
     display: inline-block;
     }
     nav.navbar li:last-child {
