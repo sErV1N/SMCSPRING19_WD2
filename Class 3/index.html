@@ -8,6 +8,21 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
 </head>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script>
+
+$( document ).ready( function() {
+    $(".figcaption").hover(
+    	function() { $( this ).stop().animate( { opacity:0.5 }, 700, "easeOutQuad" ); },
+    	function() { $( this ).stop().animate( { opacity:0 }, 700, "easeOutQuad" ); }
+    )
+});
+
+</script>
+
 <body>
         <nav class="navbar">
                 <ul>
@@ -30,15 +45,21 @@
  <!--Linked nav bar to respective sites-->
     <div class="container">
         <div class="floater-section small-width-50 med-width-33 large-width-25 red">
+                <h1>Welcome to Zambi Test Site! brains~
+
+                    </h1>
             <img src="images/scattereBones.jpeg" alt=background height:100%; background-size:cover;>
             </img>
-            <h1>Welcome to Zambi Test Site! brains~</h1>
-        </div>
+                   
+            
+    </div>
  <!--section 1-->
         <div class="floater-section small-width-50 med-width-33 large-width-25 green">
+            <a href="products.html">
+                <p>See our Products!</p>    
                 <img src="images/pexels-photo-210881.jpeg" alt=background height:100%; background-size:cover;>
-            </img>    
-            <p>See our Products!</p>
+                </img>    
+            </a>
             </div>
  <!--section 2-->
         <div class="floater-section small-width-100 med-width-33 large-width-25 blue">

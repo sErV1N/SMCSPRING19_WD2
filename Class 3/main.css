@@ -30,7 +30,7 @@
 clear:both;
     }
 
-    img {max-width:100%; height:auto;margin:0 auto;display: block;} /*responsive code 
+    img {min-height:auto;margin:0 auto;display: block;} /*responsive code 
     for images so they adapt inside the container*/
 
     .figcaption {
@@ -65,6 +65,7 @@ clear:both;
     nav.navbar li {
     border-bottom: 2px solid yellowgreen;
     display: inline-block;
+    padding-bottom: 20px;
     }
     nav.navbar li:last-child {
     border-bottom: none;
