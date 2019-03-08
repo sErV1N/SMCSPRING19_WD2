@@ -1,0 +1,51 @@
+.content {
+    padding: 0px 10px;
+    min-height: 663px;
+    border-bottom: 2px solid darkorchid;
+    position: relative;
+}
+
+
+.content .img-container {
+    min-height: 160px;
+}
+
+.content img {
+    max-width:100%;
+}
+
+.content .abs-pos {
+    position: absolute;
+}
+
+
+
+
+#jkrOverlap{
+    top:30px;
+}
+
+#jkrTitle {
+    top: 30px;
+    right:30px;
+    color:whitesmoke;
+    text-shadow: 1px 0px 4px #073566;
+}
+.red{
+    background-color:lightcoral;
+}   
+.green{
+    background-color:green;
+}
+.blue {
+    background-color:lightblue;
+}
+.yellow{
+    background-color:lightgoldenrodyellow;
+}   
+.cyan{
+    background-color:darkturquoise;
+}   
+.purple{
+    background-color:plum;
+}   

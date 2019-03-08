@@ -30,8 +30,6 @@
 clear:both;
     }
 
-    img {min-height:auto;margin:0 auto;display: block;} /*responsive code 
-    for images so they adapt inside the container*/
 
     .figcaption {
         position: absolute;
