@@ -1,3 +1,4 @@
+/* .content -------------------------------------*/
 .content {
     padding: 0px 10px;
     min-height: 663px;
@@ -20,17 +21,19 @@
 
 
 
-
+/* jkr -----------------------------------------*/
 #jkrOverlap{
     top:30px;
 }
 
 #jkrTitle {
     top: 30px;
-    right:30px;
+    right:10px;
     color:whitesmoke;
     text-shadow: 1px 0px 4px #073566;
 }
+
+/* color section----------------------------------*/
 .red{
     background-color:lightcoral;
 }   
