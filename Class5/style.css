@@ -1,0 +1,83 @@
+/* .content -------------------------------------*/
+.content {
+    padding: 0px 10px;
+    min-height: 663px;
+    border-bottom: 2px solid darkorchid;
+    position: relative;
+}
+
+
+.content .img-container {
+    min-height: 160px;
+}
+
+.content img {
+    max-width:100%;
+}
+
+.content .abs-pos {
+    position: relative;
+}
+
+
+
+/* color section----------------------------------*/
+.red{
+    background-color:lightcoral;
+}   
+.green{
+    background-color:green;
+}
+.blue {
+    background-color:lightblue;
+}
+.yellow{
+    background-color:lightgoldenrodyellow;
+}   
+.cyan{
+    background-color:darkturquoise;
+}   
+.purple{
+    background-color:plum;
+}   
+#verCenter1 {
+    position: relative;
+    height:200px;
+}
+#vertCenter2 {
+
+
+#verHorizCenter1 h2 {
+    position: absolute;
+    top:50%;
+    left:50%;
+    padding:30px;
+
+    /*Half the width accounting for pading and border*/
+    margin-left: -159px;
+    width: 258px;
+
+    /*Half the height accounting for padding and border*/
+    margin-top:-44px;
+}
+
+#verHorizCenter1 h2 p {
+    position: absolute;
+    
+}
+
+#vertCenter1 img {
+    position:absolute;
+    height:100px;
+    /*because we need to calculate the margin */
+    margin-top: -50px;
+    top:50%;
+    display:block;
+}
+#Lorem1 {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    margin:0px; /*MARGINS affect the centering in this method! */
+    padding:
+}
