@@ -136,7 +136,7 @@
         .med-width-75 {
             width:75%;
         }
-        .med-wdith-100 {
+        .med-width-100 {
             width:100%;
         }
 
@@ -177,5 +177,12 @@
         }
     .large-width-100 {
             width:100%;
+        }
+    .large-hide {
+            display: hide;
+        }
+    
+    .large-show {
+            display: initial;
         }
     }
