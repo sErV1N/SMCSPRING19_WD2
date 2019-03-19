@@ -44,7 +44,32 @@
     position: relative;
     height:200px;
 }
-#vertCenter2 {
+
+#vertCenter1,
+#vertCenter2,
+#vertHorizCenter1 {
+    height: 200px;
+}
+
+#vertHorizCenter2 {
+    height: 400px;
+}
+
+#vertCenter1 img {
+    position: absolute;
+    height: 100px; /* because we need to calculate the margin */
+    margin-top: -50px;
+    top: 50%;
+    display: block;
+}
+
+#Lorem1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px; /* MARGINS affect the centering in this method! */
+}
+
 
 
 #verHorizCenter1 h2 {
@@ -63,21 +88,12 @@
 
 #verHorizCenter1 h2 p {
     position: absolute;
-    
-}
+    top: 50%;
+    left: 50%;
 
-#vertCenter1 img {
-    position:absolute;
-    height:100px;
-    /*because we need to calculate the margin */
-    margin-top: -50px;
-    top:50%;
-    display:block;
-}
-#Lorem1 {
-    position:absolute;
-    top:50%;
-    transform: translateY(-50%);
-    margin:0px; /*MARGINS affect the centering in this method! */
-    padding:
+    transform: translate(-50%, -50%);
+
+    margin: 0px;
+    text-align: justify;
+
 }
