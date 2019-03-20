@@ -17,12 +17,81 @@
     position: relative;
 }
 
+table {
+    background: white;
+    width: 240px;
+    border-collapse: separate;
+    margin: 125px;
+    height: 250px;
+  }
+  
+  table td {
+    background: black;
+    color: white;
+    padding: 20px;
+    border: 10px solid white;
+    /* default is vertical-align: middle; */
+  }
+  
+  .center-table {
+    display: table;
+    height: 250px;
+    background: white;
+    width: 240px;
+    margin: 20px;
+    transform: translate(50%);
+  }
+  .center-table p {
+    display: table-cell;
+    margin: 0;
+    background: black;
+    color: white;
+    padding: 20px;
+    border: 10px solid white;
+    vertical-align: middle;
+  }
 
+  .parent {
+    position: relative;
+  }
+  .child {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
+  main {
+    background: white;
+    height: 300px;
+    margin: 20px;
+    width: 300px;
+    position: relative;
+    resize: vertical;
+    overflow: auto;
+  }
+  
+  main div {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    background: black;
+    color: white;
+    padding: 20px;
+    transform: translateY(-50%);
+    resize: vertical;
+    overflow: auto;
+  }
 /* color section----------------------------------*/
 .red{
     background-color:lightcoral;
 }   
+.black{
+    background-color: black;
+}
+.grey{
+    background-color: grey;
+}
 .green{
     background-color:green;
 }
@@ -58,6 +127,8 @@
     height: 100px; /* because we need to calculate the margin */
     margin-top: -50px;
     top: 50%;
+    margin-left: -50px;
+    left: 50%;
     display: block;
 }
 
