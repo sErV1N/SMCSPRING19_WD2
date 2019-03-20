@@ -2,6 +2,7 @@
 .content {
    
     position: relative;
+    color:white;
 }
 
 
@@ -82,6 +83,7 @@ table {
     resize: vertical;
     overflow: auto;
   }
+
 /* color section----------------------------------*/
 .red{
     background-color:lightcoral;
