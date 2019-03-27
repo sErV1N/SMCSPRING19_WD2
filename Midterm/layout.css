@@ -22,6 +22,11 @@
     .clearfix{
         clear:both;
 }
+div#myBox {
+    position:absolute;
+    background-color:red;
+    z-index:1;
+  } 
 
 
 
