@@ -2,7 +2,7 @@
 .content {
    
     position: relative;
-    color:white;
+    color:#F2E0BB;
 }
 
 
@@ -17,7 +17,20 @@
 .content .abs-pos {
     position: relative;
 }
+/* fonts -------------------------------------*/
+body {
+    background-color: oldlace;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Headland One', serif;
+    font-size: 14px;
+    text-shadow: 2px 2px 2px #aaa;
 
+  }
+
+
+
+/* table -------------------------------------*/
 table {
     background: white;
     width: 240px;
@@ -62,10 +75,10 @@ table {
   }
 
   main {
-    background: white;
-    height: 300px;
-    margin: 20px;
-    width: 300px;
+    background: none;
+    height: 120px;
+    margin: 80px;
+    width: auto;
     position: relative;
     resize: vertical;
     overflow: auto;
@@ -79,11 +92,19 @@ table {
     background: black;
     color: white;
     padding: 20px;
-    transform: translateY(-50%);
+    transform: translateX(50%);
     resize: vertical;
     overflow: auto;
   }
 
+  .order-online:link {
+  color: #FFFFFF;
+line-height: 30px;
+display: block;
+text-decoration: none;
+font-weight: bold;
+background-color: #BF3F00;
+  }
 /* color section----------------------------------*/
 .red{
     background-color:lightcoral;
