@@ -17,17 +17,24 @@
 .content .abs-pos {
     position: relative;
 }
-/* fonts -------------------------------------*/
+/* font styles -------------------------------------*/
 body {
-    background-color: oldlace;
+    background-color: #F2E0BB;
     font-family: 'Work Sans', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Headland One', serif;
     font-size: 14px;
     text-shadow: 2px 2px 2px #aaa;
-
-  }
-
+    }
+header, nav {
+        text-align: center;
+        background: white;
+        margin: 20px 0;
+        padding: 10px;
+    }
+h1 {color:none;font-family: 'Headland One'; text-align: center; margin-left: auto;margin-right:auto;}
+h2 {color:none;font-family: 'Source Sans Pro'; text-align: center; margin-left: auto;margin-right:auto;}
+p {color:none;font-family: 'Work Sans'; text-align: center; margin-left: auto;margin-right:auto;}
 
 
 /* table -------------------------------------*/
@@ -47,6 +54,15 @@ table {
     /* default is vertical-align: middle; */
   }
   
+
+  .center {
+    margin: 0 auto;
+    width: 182px;
+    background: none;
+    padding: 20px;
+    color: white;
+  }
+
   .center-table {
     display: table;
     height: 250px;
@@ -109,6 +125,9 @@ background-color: #BF3F00;
 .red{
     background-color:lightcoral;
 }   
+.beige{
+    background-color:#FFCE6A;
+}
 .black{
     background-color: black;
 }
