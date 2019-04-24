@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body id = "mainBody">
+        <h1>Hello, World!</h1>
+
+        <button id="triggerButton">Span</button>
+
+        <h2>Today's number is: <span id= "numberBox"></span></h2>
+        <script>
+           
+           var numberSpan = document.getElementById("numberBox");
+           //console.log(numberSpan); to check and use in all javascript//
+
+           var randomNumber = Math.random();
+           numberSpan.innerText = randomNumber;
+
+           var changeBackground = function(){
+                var redColor = Math.random()*255;
+                var greenColor = Math.random()*255;
+                var blueColor = Math.random()*255;
+
+
+                var textColor = "rgb(" + redColor + "," +greenColor + "," + blueColor + ")";
+                console.log(textColor);
+
+                var subHeader = numberSpan.parentElement;
+
+                //subHeader.style.color = textColor;//
+                //assigned subheader to colors//
+
+
+
+                //console.log(greenColor);//
+                var body = document.getElementById("mainBody");
+                body.style.backgroundColor = textColor;
+           }
+        
+           var myButton = document.getElementById("triggerButton");
+
+           myButton.addEventListener("click", changeBackground);
+           changeBackground();//executes last so it can recall the function     
+           
+        </script>
+    </body>
+</html>
