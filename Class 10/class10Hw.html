@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--STYLES-->
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto|ZCOOL+KuaiLe');
+        </style>
+    </head>
+    <body>
+        <h1 id="h1">Hello, World! Change the Font!</h1>
+
+        <button id="triggerButton">Span</button>
+        <script>
+
+            var numberSpan = document.getElementById("numberBox");
+           //console.log(numberSpan); to check and use in all javascript//
+
+           var randomNumber = Math.random();
+           numberSpan.innerText = randomNumber;
+
+           document.getElementById("h1").style.fontFamily
+
+           
+           var changeFont = function(){
+            var fontChange = "font(" + Montserrat + "," +Roboto + "," +ZCOOL+KuaiLe + ")";
+            console.log.(fontChange)
+            }
+
+            var myButton = document.getElementById("triggerButton");
+            myButton.addEventListener("click", changeFont);
+            changeBackground();//executes last so it can recall the function     
+
+
+        </script>
+
+        
+        <p>The paragraph above was changed by a script.</p>
+    </body>
+</html>
