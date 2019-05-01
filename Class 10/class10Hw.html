@@ -11,33 +11,28 @@
         </style>
     </head>
     <body>
-        <h1 id="h1">Hello, World! Change the Font!</h1>
+            <h1 id="id1">See the Header Change!</h1>
 
-        <button id="triggerButton">Span</button>
-        <script>
+            <button type="button" 
+            onclick="document.getElementById('id1').style.fontFamily = 'Roboto'">
+            Click Me!</button>
 
-            var numberSpan = document.getElementById("numberBox");
-           //console.log(numberSpan); to check and use in all javascript//
+            <button onclick="myFunction()">Click Me</button>
+            <div id="myDIV">
+                    
+            <img id="image" src="images/boats-clouds-dawn-2210285.jpg" width="160" height="120">;
+                    </div>
 
-           var randomNumber = Math.random();
-           numberSpan.innerText = randomNumber;
-
-           document.getElementById("h1").style.fontFamily
-
-           
-           var changeFont = function(){
-            var fontChange = "font(" + Montserrat + "," +Roboto + "," +ZCOOL+KuaiLe + ")";
-            console.log.(fontChange)
-            }
-
-            var myButton = document.getElementById("triggerButton");
-            myButton.addEventListener("click", changeFont);
-            changeBackground();//executes last so it can recall the function     
-
-
-        </script>
-
-        
-        <p>The paragraph above was changed by a script.</p>
+            <script>
+            function myFunction() {
+                var x = document.getElementById("myDIV");
+                if (x.style.display === "none") {
+                x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                    }
+                }
+            
+            </script>
     </body>
 </html>
