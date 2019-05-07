@@ -2,12 +2,13 @@
 .content {
    
     position: relative;
-    color:#F2E0BB;
+    color: #E8D11A;
 }
 
 
 .content .img-container {
     min-height: 160px;
+    display:block;
 }
 
 .content img {
@@ -17,14 +18,16 @@
 .content .abs-pos {
     position: relative;
 }
+/* Header styles -------------------------------------*/
+#logo {width: 100%;/*130px*/;margin-left: auto;margin-right: auto;margin-top: 10px; /*340px;*/}
+
 /* font styles -------------------------------------*/
 body {
-    background-color: #F2E0BB;
+    background-color: rgb(255, 255, 255);
     font-family: 'Work Sans', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Headland One', serif;
     font-size: 14px;
-    text-shadow: 2px 2px 2px #aaa;
     }
 header, nav {
         text-align: center;
