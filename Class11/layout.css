@@ -25,7 +25,8 @@
     
     /*nav styles*/
     nav.navbar {
-        background-color: darkred;
+        background-color: blue;
+
         width: 100%;
         padding: 10px 0px;
     }
@@ -35,6 +36,7 @@
         padding: 10px;
         margin: 0px;
         text-align: center;
+        background-color: blue;
     }
     nav.navbar li {
     border-bottom: 2px solid yellowgreen;
