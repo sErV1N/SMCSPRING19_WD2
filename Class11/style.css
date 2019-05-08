@@ -35,54 +35,15 @@ header, nav {
         margin: 20px 0;
         padding: 10px;
     }
+
+
+}
+
 h1 {color:none;font-family: 'Headland One'; text-align: center; margin-left: auto;margin-right:auto;}
 h2 {color:none;font-family: 'Source Sans Pro'; text-align: center; margin-left: auto;margin-right:auto;}
 p {color:none;font-family: 'Work Sans'; text-align: center; margin-left: auto;margin-right:auto;}
 
 
-/* table -------------------------------------*/
-table {
-    background: white;
-    width: 240px;
-    border-collapse: separate;
-    margin: 125px;
-    height: 250px;
-  }
-  
-  table td {
-    background: black;
-    color: white;
-    padding: 20px;
-    border: 10px solid white;
-    /* default is vertical-align: middle; */
-  }
-  
-
-  .center {
-    margin: 0 auto;
-    width: 182px;
-    background: none;
-    padding: 20px;
-    color: white;
-  }
-
-  .center-table {
-    display: table;
-    height: 250px;
-    background: white;
-    width: 240px;
-    margin: 20px;
-    transform: translate(50%);
-  }
-  .center-table p {
-    display: table-cell;
-    margin: 0;
-    background: black;
-    color: white;
-    padding: 20px;
-    border: 10px solid white;
-    vertical-align: middle;
-  }
 
   .parent {
     position: relative;
