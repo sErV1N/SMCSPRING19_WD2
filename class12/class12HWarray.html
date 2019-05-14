@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Arrays</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <header></header>
+
+    <main>
+            <h1>Which model kit would you like to select?:</h1>
+
+            <form action="" method="POST">
+                <label for="modelScale">Model Scale:</label>
+                <select name="scale" id="modelScale">
+                    <option value="1/144">1/144</option>
+                    <option value="1/100">1/100</option>
+                    <option value="1/60">1/60</option>
+                    <option value="Super Deformed">Super Deformed</option>
+                </select>
+                <label for="modelGrade">Grade</label>
+                <select name="grade" id="modelGrade">
+                    <option value="NG">No Grade</option>
+                    <option value="HG">High Grade</option>
+                    <option value="MG">Master Grade</option>
+                    <option value="PG">Perfect Grade</option>
+                </select>
+            </form>
+    </main>
+
+    <script>
+        var audiModels      = ["S3", "S5", "S7"];
+        var bmwModels       = ["Series-3", "Series-4", "Series-5", "Series-7"];
+        var mercModels      = ["C-class", "E-class", "S-class"];
+        var porscheModels   = ["911", "Macan", "Panamera", "Cayenne"];
+
+        var makeDropdown = document.getElementById("carMake");
+        var modelDropdown = document.getElementById("carModel");
+        makeDropdown.addEventListener("change", function(){
+            console.log(this.value);
+
+            
+            modelDropdown.innerHTML = "";
+
+            if(this.value === "audi"){
+                for(var i = 0; i < audiModels.length; i++){
+                modelDropdown.innerHTML += '<option value="'+ audiModels[i] + '">' + audiModels[i] + '</option>';
+                }
+            } else if (this.value === 'bmw'){  
+                for(var i = 0; i < bmwModels.length; i++){
+                modelDropdown.innerHTML += '<option value="'+ bmwModels[i] + '">' + bmwModels[i] + '</option>';
+                }
+
+            } else if (this.value === 'merc'){
+                for(var i = 0; i < mercModels.length; i++){
+                modelDropdown.innerHTML += '<option value="'+ mercModels[i] + '">' + mercModels[i] + '</option>';
+                }
+
+            } else if (this.value === 'porsche'){
+                for(var i = 0; i < porscheModels.length; i++){
+                modelDropdown.innerHTML += '<option value="'+ porscheModels[i] + '">' + porscheModels[i] + '</option>';
+                }
+            }
+            //<option value=" + text + "> + Text + </option>
+        });
+    </script>
+</body>
