@@ -19,49 +19,52 @@
                     <option value="1/144">1/144</option>
                     <option value="1/100">1/100</option>
                     <option value="1/60">1/60</option>
-                    <option value="Super Deformed">Super Deformed</option>
+                    <option value="SD">Super Deformed</option>
                 </select>
                 <label for="modelGrade">Grade</label>
                 <select name="grade" id="modelGrade">
-                    <option value="NG">No Grade</option>
-                    <option value="HG">High Grade</option>
-                    <option value="MG">Master Grade</option>
-                    <option value="PG">Perfect Grade</option>
+                    <option value="ng">No Grade</option>
+                    <option value="hg">High Grade</option>
+                    <option value="mg">Master Grade</option>
+                    <option value="pg">Perfect Grade</option>
+                </select>
+                <label for="modelKit">Kit</label>
+                <select name="kit" id="modelKit">
                 </select>
             </form>
     </main>
 
     <script>
-        var audiModels      = ["S3", "S5", "S7"];
-        var bmwModels       = ["Series-3", "Series-4", "Series-5", "Series-7"];
-        var mercModels      = ["C-class", "E-class", "S-class"];
-        var porscheModels   = ["911", "Macan", "Panamera", "Cayenne"];
+        var gmKits      = ["RGM-79 GM", "RGM-79L GM Light Armor", "RGM-79G GM Ground Type"];
+        var gundamKits       = ["RX-79 Gundam", "RX-79G Gundam Ground Type", "RX-79FA Full Armor Gundam", ""];
+        var zakuKits      = ["MS-06 Zaku II", "MS-05L Zaku I Sniper", "MS-09 Dom"];
+        var sdKits   = ["Zero", "Sen", "BB Senshi Dorakun", "BB Senshi Zakkun"];
 
-        var makeDropdown = document.getElementById("carMake");
-        var modelDropdown = document.getElementById("carModel");
-        makeDropdown.addEventListener("change", function(){
+        var gradeDropdown = document.getElementById("modelGrade");
+        var kitDropdown = document.getElementById("modelKit");
+        gradeDropdown.addEventListener("change", function(){
             console.log(this.value);
 
             
-            modelDropdown.innerHTML = "";
+            kitDropdown.innerHTML = "";
 
-            if(this.value === "audi"){
-                for(var i = 0; i < audiModels.length; i++){
-                modelDropdown.innerHTML += '<option value="'+ audiModels[i] + '">' + audiModels[i] + '</option>';
+            if(this.value === "ng"){
+                for(var i = 0; i < gmKits.length; i++){
+                kitDropdown.innerHTML += '<option value="'+ gmKits[i] + '">' + gmKits[i] + '</option>';
                 }
-            } else if (this.value === 'bmw'){  
-                for(var i = 0; i < bmwModels.length; i++){
-                modelDropdown.innerHTML += '<option value="'+ bmwModels[i] + '">' + bmwModels[i] + '</option>';
-                }
-
-            } else if (this.value === 'merc'){
-                for(var i = 0; i < mercModels.length; i++){
-                modelDropdown.innerHTML += '<option value="'+ mercModels[i] + '">' + mercModels[i] + '</option>';
+            } else if (this.value === 'hg'){  
+                for(var i = 0; i < gundamKits.length; i++){
+                kitDropdown.innerHTML += '<option value="'+ gundamKits[i] + '">' + gundamKits[i] + '</option>';
                 }
 
-            } else if (this.value === 'porsche'){
-                for(var i = 0; i < porscheModels.length; i++){
-                modelDropdown.innerHTML += '<option value="'+ porscheModels[i] + '">' + porscheModels[i] + '</option>';
+            } else if (this.value === 'mg'){
+                for(var i = 0; i < zakuKits.length; i++){
+                kitDropdown.innerHTML += '<option value="'+ zakuKits[i] + '">' + zakuKits[i] + '</option>';
+                }
+
+            } else if (this.value === 'pg'){
+                for(var i = 0; i < sdKits.length; i++){
+                kitDropdown.innerHTML += '<option value="'+ sdKits[i] + '">' + sdKits[i] + '</option>';
                 }
             }
             //<option value=" + text + "> + Text + </option>
