@@ -21,12 +21,12 @@
                     <option value="1/60">1/60</option>
                     <option value="SD">Super Deformed</option>
                 </select>
-                <label for="modelGrade">Grade</label>
+                <label for="kitLine">Kit Line</label>
                 <select name="grade" id="modelGrade">
-                    <option value="ng">No Grade</option>
-                    <option value="hg">High Grade</option>
-                    <option value="mg">Master Grade</option>
-                    <option value="pg">Perfect Grade</option>
+                    <option value="gm">GM kits</option>
+                    <option value="gundam">Gundam Kits</option>
+                    <option value="zaku">Zaku Kits</option>
+                    <option value="sd">Super Deformed Kits</option>
                 </select>
                 <label for="modelKit">Kit</label>
                 <select name="kit" id="modelKit">
@@ -48,21 +48,21 @@
             
             kitDropdown.innerHTML = "";
 
-            if(this.value === "ng"){
+            if(this.value === "gm"){
                 for(var i = 0; i < gmKits.length; i++){
                 kitDropdown.innerHTML += '<option value="'+ gmKits[i] + '">' + gmKits[i] + '</option>';
                 }
-            } else if (this.value === 'hg'){  
+            } else if (this.value === 'gundam'){  
                 for(var i = 0; i < gundamKits.length; i++){
                 kitDropdown.innerHTML += '<option value="'+ gundamKits[i] + '">' + gundamKits[i] + '</option>';
                 }
 
-            } else if (this.value === 'mg'){
+            } else if (this.value === 'zaku'){
                 for(var i = 0; i < zakuKits.length; i++){
                 kitDropdown.innerHTML += '<option value="'+ zakuKits[i] + '">' + zakuKits[i] + '</option>';
                 }
 
-            } else if (this.value === 'pg'){
+            } else if (this.value === 'sd'){
                 for(var i = 0; i < sdKits.length; i++){
                 kitDropdown.innerHTML += '<option value="'+ sdKits[i] + '">' + sdKits[i] + '</option>';
                 }
