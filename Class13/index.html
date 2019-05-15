@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jquerey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        .container {
+            width:500px;
+            height:400px;
+            background-color:azure;
+        }
+        .blue-container {
+            background-color: lightskyblue;
+        }
+        .box{
+            width: 150px;
+            height:150px;
+            background-color: chartreuse;
+            display:none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="header">Hello, world!</h1>
+
+    <button id= "btn1">Append Things</button>
+    <button id= "btn2">Prepend Things</button>
+    <button id= "btn3">Remove Addons</button>
+    <button id= "btn4">Empty Container</button>
+
+    <button id= "colorToggle">Switch Color</button>
+    <div class="container">
+        I am child 1
+        <div class="box"></div>
+    </div>
+
+    <form action="" method="POST">
+        <input type="text" name="name" id="myName">
+        <input type="email" name="email" id="myEmail">
+        <input type="submit" value="submit">
+        <select id="FX" name="effects">
+            <option value="">default</option>
+            <option value="show">Show an element</option>
+            <option value="hide">Hide an element</option>
+            <option value="fadein">Fade in an element</option>
+            <option value="fadeout">Fade out an element</option>
+            
+            <option value="slidedown">Slide it down</option>
+            <option value="slideup">Slide it up</option>
+        </select>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('body').css('background-color', '#a11a1e');
+            $('.header').css('color', 'white');
+
+            $('#FX').change(function(){
+                var selection = $(this).val();
+                if(selection === "show"){
+                    $('.box').show();
+                }
+                else if(selection === 'hide'){
+                    $('.box').hide();
+                }//creating multiple options
+                else if(selection === 'fadein'){//Note: fadein is a value 
+                    $('.box').fadeIn();//can customize the () in fadeIn to be xyz milliseconds
+                }
+                else if(selection === 'fadeout'){
+                    $('.box').fadeOut();
+                }
+
+            })
+
+            $('#colorToggle').click(function(){
+                $('.container').toggleClass('blue-container');
+            })
+
+            $('#myName').blur(function(){
+                console.log( $('#myName').val() );
+
+                if($('#myName').val() === "Maxim"){
+                    $('#myEmail').val('safioulline_maxim@smc.edu');
+                }
+            });
+            //blur will trigger a function
+            //the .header is a css notation replacement for document.getElementByClassName('header')[0]
+
+            //$('.container').append('<div class="containter-child">I am child 2!</div>')
+            //this container will be added after child 1; containter child in a container
+            //$('.container').prepend('<div class="containter-child">I am child 3!</div>')
+
+            //$('.container').after('<div class="addon">I AFTER!!!</div>')
+            //this will appear outside the container
+            //$('.container').before('<div class="addon">I am BEFORE!!!</div>')
+
+            //$('<div class="container-child">I am child 4</div>').appendTo('.container');
+            //$('<div class="container-child">I am child 5</div>').prependTo('.container');
+
+            $('#btn1').click(function(){
+                $('.container').append('<div class="containter-child">I am child 2!</div>')
+                $('<div class="container-child">I am child 4</div>').appendTo('.container');
+                $('.container').after('<div class="addon">I AFTER!!!</div>')
+            });
+
+            $('#btn2').click(function(){
+                $('.container').prepend('<div class="container-child">I am child 3!</div>')
+                $('.container').before('<div class="addon">I am BEFORE!!!</div>')
+                $('<div class="container-child">I am child 5</div>').prependTo('.container');
+            });
+
+            $('#btn3').click(function(){
+                $('.addon').remove();
+            });
+
+            $('#btn4').click(function(){
+                $('.container').empty();
+            });
+
+        })
+    </script>
+</body>

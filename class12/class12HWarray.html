@@ -21,17 +21,23 @@
                     <option value="1/60">1/60</option>
                     <option value="SD">Super Deformed</option>
                 </select>
+                
                 <label for="kitLine">Kit Line</label>
                 <select name="grade" id="modelGrade">
+                    <option value="gm">Select a Kit Line</option>
                     <option value="gm">GM kits</option>
                     <option value="gundam">Gundam Kits</option>
                     <option value="zaku">Zaku Kits</option>
                     <option value="sd">Super Deformed Kits</option>
                 </select>
+                
+                
                 <label for="modelKit">Kit</label>
                 <select name="kit" id="modelKit">
                 </select>
             </form>
+
+            <p id="textContainer"></p>
     </main>
 
     <script>
@@ -42,11 +48,14 @@
 
         var gradeDropdown = document.getElementById("modelGrade");
         var kitDropdown = document.getElementById("modelKit");
+
+        var textContainer = document.getElementById('textContainer');
+
         gradeDropdown.addEventListener("change", function(){
             console.log(this.value);
 
             
-            kitDropdown.innerHTML = "";
+            kitDropdown.innerHTML = "selectkit";
 
             if(this.value === "gm"){
                 for(var i = 0; i < gmKits.length; i++){
@@ -64,10 +73,20 @@
 
             } else if (this.value === 'sd'){
                 for(var i = 0; i < sdKits.length; i++){
-                kitDropdown.innerHTML += '<option value="'+ sdKits[i] + '">' + sdKits[i] + '</option>';
+                    kitDropdown.innerHTML += '<option value="'+ sdKits[i] + '">' + sdKits[i] + '</option>';
                 }
             }
             //<option value=" + text + "> + Text + </option>
         });
+
+
+        kitDropdown.addEventListener("change", function(){
+            console.log(this.value);
+
+            if(this.value === "RGM-79 GM"){
+                textContainer.innerHTML = "Hello World!!!";
+            }
+        });
+
     </script>
 </body>
