@@ -11,6 +11,7 @@
             width:500px;
             height:400px;
             background-color:azure;
+            image
         }
         .blue-container {
             background-color: lightskyblue;
@@ -26,17 +27,29 @@
 </head>
 
 <body>
-    <h1 class="header">Hello, world!</h1>
+    <h1 class="header" id="Top">Hello, world! Welcome to the Image Gallery!</h1>
 
     <button id= "btn1">Append Things</button>
     <button id= "btn2">Prepend Things</button>
     <button id= "btn3">Remove Addons</button>
     <button id= "btn4">Empty Container</button>
+    <button id= "btn5">slidedown</button>
+    <button id= "btn6">slideUp</button>
 
     <button id= "colorToggle">Switch Color</button>
     <div class="container">
         I am child 1
-        <div class="box"></div>
+        <div class="box">
+            <img src="images/apple-blooming-blossom-1002785.jpg" alt="Popularsciencebg">
+            <img src="images/architecture-art-design-1040626.jpg" alt="Popularsciencebg">
+            <img src="images/beautiful-beautiful-flowers-bright-1133957.jpg" alt="Popularsciencebg">
+            <img src="images/beautiful-blooming-bright-1098520.jpg" alt="Popularsciencebg">
+            <img src="images/beauty-bloom-blue-67636.jpg" alt="Popularsciencebg">
+            <img src="images/bloom-blooming-blossom-36753.jpg" alt="Popularsciencebg">
+            <img src="images/bloom-blooming-blossom-929778.jpg" alt="Popularsciencebg">
+            <img src="images/bloom-blossom-close-up-36764.jpg alt="Popularsciencebg">
+            <img src="images/bloom-blossom-dahlia-60597.jpg" alt="Popularsciencebg">
+        </div>
     </div>
 
     <form action="" method="POST">
@@ -56,9 +69,10 @@
     </form>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
+   
     <script>
         $(document).ready(function(){
-            $('body').css('background-color', '#a11a1e');
+            $('body').css('background-color', 'tan');
             $('.header').css('color', 'white');
 
             $('#FX').change(function(){
@@ -70,10 +84,16 @@
                     $('.box').hide();
                 }//creating multiple options
                 else if(selection === 'fadein'){//Note: fadein is a value 
-                    $('.box').fadeIn();//can customize the () in fadeIn to be xyz milliseconds
+                    $('.box').fadeIn(1000);//can customize the () in fadeIn to be xyz milliseconds
                 }
                 else if(selection === 'fadeout'){
-                    $('.box').fadeOut();
+                    $('.box').fadeOut(1500);
+                }
+                else if(selection === 'slideDown'){
+                    $('.box').slideDown();
+                }
+                else if(selection === 'slideUp'){
+                    $('.box').slideUp();
                 }
 
             })
@@ -85,8 +105,8 @@
             $('#myName').blur(function(){
                 console.log( $('#myName').val() );
 
-                if($('#myName').val() === "Maxim"){
-                    $('#myEmail').val('safioulline_maxim@smc.edu');
+                if($('#myName').val() === "Esteban"){
+                    $('#myEmail').val('SERVIN_ESTEBAN_MASAY@smc.edu');
                 }
             });
             //blur will trigger a function
@@ -122,7 +142,23 @@
             $('#btn4').click(function(){
                 $('.container').empty();
             });
+            
+            $('#btn5').click(function () {
+                if ( $( "div:first" ).is( ":hidden" ) ) {
+                $( "div" ).slideDown( "slow" );
+                } else {
+                $( "div" ).hide();
+                }
+                });
 
-        })
+            })
+
+            $('#btn6').click(function() {
+                if ( $( "div:first" ).is( ":hidden" ) ) {
+                $( "div" ).show( "slow" );
+                } else {
+                $( "div" ).slideUp();
+                }
+        });
     </script>
 </body>
