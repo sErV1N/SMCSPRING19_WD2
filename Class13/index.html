@@ -22,6 +22,21 @@
             background-color: chartreuse;
             display:none;
         }
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
     </style>
 
 </head>
@@ -35,20 +50,17 @@
     <button id= "btn4">Empty Container</button>
     <button id= "btn5">slidedown</button>
     <button id= "btn6">slideUp</button>
+    <button id= "btn8">Add Image</button>
+    <button id= "btn9">Remove Image</button>
 
     <button id= "colorToggle">Switch Color</button>
+    <div class="imgGall" display:none>
+        <img src = >
+    </div>
     <div class="container">
         I am child 1
         <div class="box">
-            <img src="images/apple-blooming-blossom-1002785.jpg" alt="Popularsciencebg">
-            <img src="images/architecture-art-design-1040626.jpg" alt="Popularsciencebg">
-            <img src="images/beautiful-beautiful-flowers-bright-1133957.jpg" alt="Popularsciencebg">
-            <img src="images/beautiful-blooming-bright-1098520.jpg" alt="Popularsciencebg">
-            <img src="images/beauty-bloom-blue-67636.jpg" alt="Popularsciencebg">
-            <img src="images/bloom-blooming-blossom-36753.jpg" alt="Popularsciencebg">
-            <img src="images/bloom-blooming-blossom-929778.jpg" alt="Popularsciencebg">
-            <img src="images/bloom-blossom-close-up-36764.jpg alt="Popularsciencebg">
-            <img src="images/bloom-blossom-dahlia-60597.jpg" alt="Popularsciencebg">
+            
         </div>
     </div>
 
@@ -159,6 +171,28 @@
                 } else {
                 $( "div" ).slideUp();
                 }
-        });
+
+            $('#btn7').click(function() {
+                ('.add-more').click(function(){
+                    clickCounter++
+                    if (clickCounter > 9) {
+                        alert("No more images are available for display.")
+                    }
+                } else {
+                $( '#imgGall'+clickCounter).css('display', inline-block');
+                }
+
+            $('#btn8').click(function() {
+                ('.remove-more').click(function(){
+                    clickCounter++
+                })
+                } else {
+                $( "div" ).remove();
+                }
+            
+
+         
+        
+        }); 
     </script>
 </body>
