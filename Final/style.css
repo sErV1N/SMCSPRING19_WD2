@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Varela+Round&display=swap');
+
+body{
+    margin:0px;
+
+}
+nav{
+    background-color: #00364f;
+    color:black;
+}
+ul{
+    padding-left:0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+li{
+    margin: 5px 10px;
+    background-color:none;
+    color:white
+}
+
+li#home {
+    order:0;
+
+}
+
+@media(min-width: 768px){
+    ul {
+        flex-direction: row;
+    }
+}
+
+li#home {
+    order:1;
+    flex-grow: 2;
+}
+
+li:nth-last-child(2) {
+    order:2;
+
+}
+
+lin:nth-last-child(1){
+    order:3;
+}
