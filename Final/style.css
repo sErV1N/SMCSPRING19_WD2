@@ -27,6 +27,9 @@ li#home {
 
 }
 
+.container {
+    display: flex; /* or inline-flex */
+  }
 @media(min-width: 768px){
     ul {
         flex-direction: row;
