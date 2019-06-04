@@ -59,7 +59,7 @@ li#home {
 
 li#home {
     order:1;
-    flex-grow: 2;
+    /*flex-grow: 1;*/
 }
 
 li:nth-last-child(2) {
@@ -67,6 +67,6 @@ li:nth-last-child(2) {
 
 }
 
-lin:nth-last-child(1){
+li:nth-last-child(1){
     order:3;
 }
