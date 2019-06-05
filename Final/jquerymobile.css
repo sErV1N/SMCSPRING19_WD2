@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Varela+Round&display=swap');
+
 .ui-mobile [data-role=header],.ui-mobile [data-role=footer]{
     background-color: rgba(0, 89, 187, 0.71);
     color: beige;
@@ -13,6 +15,7 @@
     }
     p{
     text-align:left;
+    font-family: 'Source Sans Pro', sans-serif;
     }
     span{
     color:red;
