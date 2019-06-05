@@ -7,58 +7,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layout.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="jquerymobile.css">
+    <link rel="javascript" href="main.js">
     
+   
 
 
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li id ="home"><a href="index.html"class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="donations.html">Donations</a></li>
-                <li><a href="blog.html">Blog</a></li>
+  <header>
+    <nav>
+      <ul>
+        <li id ="home"><a href="index.html"class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="donations.html">Donations</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h1>Welcome to Meals on Wheels!</h1>
 
-            </ul>
-        </nav>
-    </header>
-    <main>
-
-   
-
-
-        <h1>Welcome to Meals on Wheels!</h1>
-
+    <button>Click to Reveal Gallery!</button>
+  
+    <div id = "imageGallery" style="display: none;">
+      <div class="responsive">
         <div class="gallery">
-            <a target="_blank" href="images/active-blue-charity-1353351.jpg">
-              <img src="images/active-blue-charity-1353351.jpg" alt="Cinque Terre" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
+          <a target="_blank" href="images/active-blue-charity-1353351.jpg">
+            <img src="images/active-blue-charity-1353351.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+        <div class="desc">Come Join our Awesome Team to Help Feed Those in Need</div>
+        </div>
+      </div>
+        
+        
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/badgeMember.jpg">
+            <img src="images/badgeMember.jpg" alt="Forest" width="600" height="400">
+          </a>
+        <div class="desc">Meals on Wheels West LA: Member since 2017</div>
+        </div>
+      </div>
+        
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/bags-brown-brown-bag-21436.jpg">
+            <img src="images/bags-brown-brown-bag-21436.jpg" alt="Northern Lights" width="600" height="400">
+          </a>
+        <div class="desc">Professionally Packed Lunches for Our Clients</div>
+        </div>
+      </div>
+        
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/celebration-christmas-gifts-gifts-1666067.jpg">
+            <img src="images/celebration-christmas-gifts-gifts-1666067.jpg" alt="Mountains" width="600" height="400">
+          </a>
+        <div class="desc">Holiday or Not, Delivery is Guaranteed</div>
+        </div>
+      </div>
+        
+      <div class="clearfix"></div>
+    </div>
+      <div style="padding:6px;">
+        <p>Since 1976, Meals on Wheels of West Los Angeles, a non-profit, volunteer community service organization has been providing nutritious meals and friendship to individuals who are unable to plan, shop, or prepare meals for themselves due to illness, disability, or advanced age.  Monday through Friday, our volunteers deliver a hot midday meal and a cold supper to elderly and disabled individuals living in</p>
+        <p>·      Westwood (90024)</p>
+        <p>·      West Los Angeles (90025 & 90064)</p>
+        <p>·      Brentwood (90049) and</p>
+        <p>·      Bel Air (90077)</p>
+        <p>.      and parts of zip codes 90210 and 90035</p>
+        <p>We deliver over 45,000 meals a year. Our volunteers deliver 5 days a week. By giving their time as well as the use of their vehicles, our volunteers help ease any loneliness or isolation a client may feel. They serve as a critical link between the client and his/her family, loved ones, and neighbors.</p>
           
-          <div class="gallery">
-            <a target="_blank" href="images/charity-cheerful-community-service-1345081.jpg">
-              <img src="images/charity-cheerful-community-service-1345081.jpg" alt="Forest" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
           
-          <div class="gallery">
-            <a target="_blank" href="images/bags-brown-brown-bag-21436.jpg">
-              <img src="images/bags-brown-brown-bag-21436.jpg" alt="Northern Lights" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
-          
-          <div class="gallery">
-            <a target="_blank" href="images/celebration-christmas-gifts-gifts-1666067.jpg">
-              <img src="images/celebration-christmas-gifts-gifts-1666067.jpg" alt="Mountains" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
-
+      </div>
+      
 
     </main>
     <footer>
@@ -72,5 +96,7 @@
             </ul>
         </nav>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    
 </body>
 </html>
